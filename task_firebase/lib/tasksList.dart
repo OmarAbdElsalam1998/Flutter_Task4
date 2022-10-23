@@ -18,15 +18,15 @@ class TasksList extends StatelessWidget {
                     itemCount: snapshot.data?.docs.length,
                     itemBuilder: (context, index) =>  Container(
                             margin: EdgeInsets.all(10),
+                            padding:EdgeInsets.all(10),
                             decoration: BoxDecoration(
-                              color:Color.fromARGB(255, 251, 251, 251),
+                              color:Colors.deepPurple,
                               borderRadius: BorderRadius.circular(10)
                             ),
                             child: ListTile(
                             title: Text(snapshot.data?.docs[index]["Title"],style:
-                            TextStyle(color:Colors.deepPurple,fontWeight: FontWeight.bold),),
-                            subtitle:Text(snapshot.data?.docs[index]["CreatedDate"],style:
-                            TextStyle(color:Color.fromARGB(255, 83, 82, 82)),),
+                            TextStyle(color:Colors.white,fontWeight: FontWeight.bold),),
+                            
                             
                           )
                           )
